@@ -16,15 +16,25 @@
 # for x in my_list:
 #     print(x/3)
 
-#btap kiem tra chang le
-#syntax: isinstance(n,int/float)
-def kiem_tra(n):
-    if n % 2 == 0:
-        return "Số chẵn"
-    else:
-        return "Số lẻ"
+# #btap kiem tra chang le
+# #syntax: isinstance(n,int/float)
+# def kiem_tra(n):
+#     if n % 2 == 0:
+#         return "Số chẵn"
+#     else:
+#         return "Số lẻ"
 
-# Nhập từ người dùng
-so = int(input("Nhập số để kiểm tra: "))
-ket_qua = kiem_tra(so)
-print(ket_qua)
+# # Nhập từ người dùng
+# so = int(input("Nhập số để kiểm tra: "))
+# ket_qua = kiem_tra(so)
+# print(ket_qua)
+
+#baitapchanle_2
+so = float(input("Nhập số: "))
+if so.is_integer():  # Kiểm tra xem có phải số nguyên không
+    if int(so) % 2 == 0:
+        print("Số chẵn")
+    else:
+        print("Số lẻ")
+else:
+    print("Đây là số thực, không thể kiểm tra chẵn/lẻ!")
