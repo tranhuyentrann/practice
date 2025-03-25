@@ -85,3 +85,20 @@
 # import random
 # colors = ['red', 'blue', 'green']
 # print(random.choice(colors))
+
+#Array
+# a = "Hello, World!"
+# print(a[2],a[7]) #syntax luôn viết trong dấu ngoăc []
+
+
+# s = input("Nhập chuỗi:")
+# if len(s) < 3:
+#     print("Chuỗi quá ngắn!")
+# else:
+#     print("Ký tự đầu:", s[0]) #ký tư đầu tiên
+#     print("Ký tự cuối:", s[-1]) #ký tự cuối cùng
+#     print("Ký tự giữa:", s[len(s)//2]) #ký tự giữa
+#     print("3 ký tự đầu:", s[:3]) # 3 ký tự đầu :3
+#     print("3 ký tự cuối:", s[-3:])  # 3 ký tự cuối -3:
+#     print("Đảo ngược:", s[::-1]) # đảo ngược chuỗi ::-1     
+
