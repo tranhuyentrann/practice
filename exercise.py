@@ -164,29 +164,153 @@
 
 #Escape Character
 #The escape character allows you to use double quotes when you normally would not be allowed:
-txt = "We are the so-called \n Vikings from the north."
-print(txt) 
+# txt = "We are the so-called \n Vikings from the north."
+# print(txt) 
 
-text1 = "We1 are the so-called \'Vikings from the north."
-print(repr(text1))
+# text1 = "We1 are the so-called \'Vikings from the north."
+# print(repr(text1))
 
-txt2 = "We2 are the so-called \\Vikings from the north."
-print(txt2) 
+# txt2 = "We2 are the so-called \\Vikings from the north."
+# print(txt2) 
 
-txt3 = "We3 are the so-called \r Vikings from the north."
-print(txt3) 
+# txt3 = "We3 are the so-called \r Vikings from the north."
+# print(txt3) 
 
-txt4 = "We4 are the so-called \t Vikings from the north."
-print(txt4) 
+# txt4 = "We4 are the so-called \t Vikings from the north."
+# print(txt4) 
 
-txt5 = "We5 are the so-called \b Vikings from the north."
-print(txt5) 
+# txt5 = "We5 are the so-called \b Vikings from the north."
+# print(txt5) 
 
-txt6 = "We6 are the so-called \f Vikings from the north."
-print(txt6) 
+# txt6 = "We6 are the so-called \f Vikings from the north."
+# print(txt6) 
 
-txt7 = "We7 are the so-called \123 Vikings from the north."
-print(txt7) 
+# txt7 = "We7 are the so-called \123 Vikings from the north."
+# print(txt7) 
 
-txt8 = "We8 are the so-called \x53 Vikings from the north."  # \x53 = 'S'
-print(txt8)
+# txt8 = "We8 are the so-called \x53 Vikings from the north."  # \x53 = 'S'
+# print(txt8)
+
+#Boooleans
+#bai1_booleans1
+# print(10 > 9)
+# print(10 == 9)
+# print(10 < 9)
+
+#bai2_booleans2
+# a = 200
+# b = 33
+# if b > a:
+#   print("b is greater than a")
+# else:
+#   print("b is not greater than a")
+
+# x = 'Hello'
+# y = 16
+# print(bool(x))
+# print(bool(y))
+
+#baitap3_booleans
+# print(bool('abc'))
+# print(bool(123))
+# print(bool(['apple','cherry','banana']))
+
+#Boolean_Some Values are False
+# bool(False)
+# bool(None)
+# bool(0)
+# bool("")
+# bool(())
+# bool([])
+# bool({})
+
+#Access Item
+# thislist1 = ['apple','banana','cherry']
+# print(thislist1[1])
+# #Negative Index
+# thislist = ["apple", "banana", "cherry"]
+# print(thislist[-1]) #-1 refers to the last item, -2 refers to the second last item
+# #Range_Of_Index
+# thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+# print(thislist[2:5])
+# #Remember that the first item is position 0,
+# #and note that the item in position 5 is NOT included
+
+# #This example returns the items from the beginning to, but NOT including, "kiwi":This example returns the items from the beginning to, but NOT including, "kiwi"
+# thislist2 = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+# print(thislist2[:4])
+
+# #This example returns the items from "cherry" to the end
+# thislist3 = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+# print(thislist3[2:])
+
+#CHANGE_ITEM_VALUE
+thislist = ["apple", "banana", "cherry"]
+thislist[1] = "blackcurrant"
+print(thislist)
+
+#Change a Range of Item Values
+#Change the values "banana" and "cherry" with the values "blackcurrant" and "watermelon"
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+thislist[1:3] = ["blackcurrant", "watermelon"]
+print(thislist)
+
+#Insert Items
+#Insert "watermelon" as the third item
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(2, "watermelon")
+print(thislist)
+
+#append() là một phương thức của list trong Python.Thêm 1 phần tử vào cuối danh sách (list)
+#tên_list.append(giá_trị_mới)
+fruits = ["apple", "banana"]
+fruits.append("cherry")
+print(fruits)
+#Thêm nhiều phần tử_extend()	
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)
+#Insert
+mylist = ['apple', 'banana', 'cherry']
+mylist.insert(0, 'orange')
+print(mylist[1])
+print(mylist)
+
+#Remove_list
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist.remove("banana")
+print(thislist) #it will remove the 1st occurrence of item
+#Remove_specific inndex
+#Use_pop
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+
+thislist = ["apple", "banana", "cherry"]
+thislist.pop() #if dont have specific index, will remove the last item
+print(thislist)
+
+thislist = ["apple", "banana", "cherry"]
+del thislist[0] #The [del] keyword also removes the specified index
+print(thislist)
+
+thislist = ["apple", "banana", "cherry"]
+del thislist #The del keyword can also delete the list completely
+
+#Clear the List
+#The clear() method empties the list.The list still remains, but it has no content.
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
+
+
+#PYTHON_LOOP LISTS
+#Loop Through A List
+thislist = ["apple", "banana", "cherry"]
+for x in thislist: #loop through the list items by using a for loop
+  print(x)
