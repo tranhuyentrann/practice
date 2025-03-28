@@ -2,15 +2,23 @@
 #Goal: practical_int,_float,_str,_bool, và_type
 #Viết chương trình lưu các thông tin sau: Họ tên,Tuổi,Chiều cao,Tình trạng học Python 
 
-name = input("Nhập tên của bạn: ")
-age = int(input("Nhập tuổi của bạn: "))
-height = float(input("Nhập chiều cao (m): "))
-learning = input("Bạn đang học Python? (Yes/No): ")
-is_learning = learning.lower() == "yes"
-print("Trạng thái học Python:", is_learning, "| Kiểu:", type(is_learning))
+# name = input("Nhập tên của bạn: ")
+# age = int(input("Nhập tuổi của bạn: "))
+# height = float(input("Nhập chiều cao (m): "))
+# learning = input("Bạn đang học Python? (Yes/No): ")
+# is_learning = learning.lower() == "yes"
 
+# print("Trạng thái học Python:", is_learning, "| Kiểu:", type(is_learning))
+# print("Tên:", name, "| Kiểu:", type(name))
+# print("Tuổi:", age, "| Kiểu:", type(age))
+# print("Chiều cao:", height, "| Kiểu:", type(height))
+# print("Đang học Python:", learning, "| Kiểu:", type(learning))
 
-print("Tên:", name, "| Kiểu:", type(name))
-print("Tuổi:", age, "| Kiểu:", type(age))
-print("Chiều cao:", height, "| Kiểu:", type(height))
-print("Đang học Python:", learning, "| Kiểu:", type(learning))
+#BaiTap_InPut&OutPut
+#Hỏi năm sinh từ người dùng và in ra tuổi hiện tại
+name = input("Tên bạn là gì: ")
+birthday = input("Nhập năm sinh của bạn:")
+current_year = input("Nhập năm hiện tại: ")
+age = int(current_year) - int(birthday) 
+print(f"Xin chào {name}"),print(f"Tuổi của bạn là {age}") #more_advange
+# print("Tuổi của bạn là", age) #simple_match with my current level
