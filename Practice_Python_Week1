@@ -16,9 +16,19 @@
 
 #BaiTap_InPut&OutPut
 #Hỏi năm sinh từ người dùng và in ra tuổi hiện tại
-name = input("Tên bạn là gì: ")
-birthday = input("Nhập năm sinh của bạn:")
-current_year = input("Nhập năm hiện tại: ")
-age = int(current_year) - int(birthday) 
-print(f"Xin chào {name}"),print(f"Tuổi của bạn là {age}") #more_advange
-# print("Tuổi của bạn là", age) #simple_match with my current level
+# name = input("Tên bạn là gì: ")
+# birthday = input("Nhập năm sinh của bạn:")
+# current_year = input("Nhập năm hiện tại: ")
+# age = int(current_year) - int(birthday) 
+# print(f"Xin chào {name}"),print(f"Tuổi của bạn là {age}") #more_advange
+# # print("Tuổi của bạn là", age) #simple_match with my current level
+
+#BaiTap_Type_Conversion
+#nhap 2 so tu ban phim, In tong, hieu, tich, thuong
+number1 = int(input("Nhap 1 so bat ky tu 0 -9: "))
+number2 = int(input("Nhap 1 so bat ky tu 0-9: "))
+
+print(f"Tong cua hai so tren la {number1 + number2}")
+print(f"Tich cua hai so tren la {number1*number2}")
+print(f"Hieu cua hai so tren la {number1 - number2}")
+print(f"Thuong cua hai so tren la {number1/number2}")
