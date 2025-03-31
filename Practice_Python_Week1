@@ -25,10 +25,45 @@
 
 #BaiTap_Type_Conversion
 #nhap 2 so tu ban phim, In tong, hieu, tich, thuong
-number1 = int(input("Nhap 1 so bat ky tu 0 -9: "))
-number2 = int(input("Nhap 1 so bat ky tu 0-9: "))
+# number1 = int(input("Nhap 1 so bat ky tu 0 -9: "))
+# number2 = int(input("Nhap 1 so bat ky tu 0-9: "))
 
-print(f"Tong cua hai so tren la {number1 + number2}")
-print(f"Tich cua hai so tren la {number1*number2}")
-print(f"Hieu cua hai so tren la {number1 - number2}")
-print(f"Thuong cua hai so tren la {number1/number2}")
+# print(f"Tong cua hai so tren la {number1 + number2}")
+# print(f"Tich cua hai so tren la {number1*number2}")
+# print(f"Hieu cua hai so tren la {number1 - number2}")
+# print(f"Thuong cua hai so tren la {number1/number2}")
+
+#BaiTap4_Conditionals(If/Elif/Else)
+
+# age = int(input("Nhap nam sinh cua ban: "))
+# year = int(input("Nhap nam hien tai: "))
+# x = (year - age)
+# if x <12:
+#     print('Ban la Tre em')
+# elif  (12<= x <= 17):
+#     print('Ban la Thieu nien')
+# elif  (18 <= x < 60):
+#     print('Ban la Nguoi lon')  
+# else:
+#     print('Ban la nguoi Cao tuoi')
+
+#BaiTap5_Loops(for,while)
+
+# range(1,100) #hienthisochan
+# for x in range(1,100):
+#     if x % 2 == 0:
+#         print(x,end=" ")
+
+# range(1,101) #hienthisole
+# for y in range(1,101):
+#     if y % 2 != 0:
+#         print(y,end= " ") #end=" ":dung de khi in la day cach thay vi xuong hang
+
+# print("\n---")
+# i = 1
+# while i <= 100:
+#     if i % 2 == 0:
+#         print(i, end=" ")
+#     i += 1 
+
+ 
