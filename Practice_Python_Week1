@@ -66,4 +66,18 @@
 #         print(i, end=" ")
 #     i += 1 
 
- 
+ #BaiTap6_List&Indexing
+# trai_cay=['cam','chanh','xoai','dua','dau']
+# trai_cay[1]='dudu'
+# trai_cay.append('dautam')
+# for traicay in trai_cay:
+#     print(traicay,end=" ")
+
+# #BaiTap7_Strings&Slicing
+# nhapcau=input("Ban hay nhap mot cau bat ky: ")
+# print('Độ dài câu:', len(nhapcau))
+# print('4 ký tự đầu:', nhapcau[0:4])
+# if 'Python' in nhapcau:
+#     print('✅ Câu bạn nhập CÓ chứa')
+# else:
+#     print('❌ Câu bạn nhập KHÔNG chứa Python')
