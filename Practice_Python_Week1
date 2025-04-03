@@ -83,55 +83,71 @@
 #     print('❌ Câu bạn nhập KHÔNG chứa Python')
 
 #Cau1_Bai Tong Hop_Bien&Kieu_Du_Lieu
-# print("\n---")
-# hoten=str('Nguyen Van A')
-# tuoi=int(67)
-# cao=float(156)
-# CoHocPython=bool(True)
-# print('HoTen:',hoten,type(hoten))
-# print('Tuoi:',tuoi,type(tuoi))
-# print('Cao:',cao,type(cao))
-# print('CoHocPython:',CoHocPython,type(CoHocPython))
-# print("\n---")
-# # #Cau2_Nhap&Xuat-TinhToan
-# # user=input("Nam sinh cua ban la: ")
-# # user1=input("Nam hien tai la: ")
-# # Tuoiuser=int(user1)-int(user)
-# # print(f"Ban {Tuoiuser} tuoi sinh nam {user} nam nay la {user1}")
-# print("\n---")
-# #Baitap3_Phân loại theo tuổi
-# hoituoix=int(input("Nhap tuoi cua ban: "))
-# x=hoituoix
-# if x >60:
-#     print('Cao tuổi')
-# elif 18 <= x <= 59:
-#     print('Người lớn')
-# elif 12 <= x <= 17:
-#     print('Thiếu niên')
-# else:
-#     print('Tre em')
-#Cau4_Máy tính mini
-# num1=int(input("Nhap mot so bat ky: "))
-# num2=int(input("Nhap 1 so bat ky: "))
-# if num2 != 0:
-#     print(f"Thuong la {num1/num2}")
-# else:
-#     print('Phep Thuong khong co kq')
-# print(f"Tong la {num1+num2}")
-# print(f"Hieu la {num1-num2}")
-# print (f"Tich la {num1*num2}")
-#✅ Câu 5: In số chẵn từ 1 đến 100
-#
-
-# for x in dayso:
-#     if x % 2 == 0:
-#         print('Day la so chan'), print(x,end=" ")
 print("\n---")
+hoten=str('Nguyen Van A')
+tuoi=int(67)
+cao=float(156)
+CoHocPython=bool(True)
+print('HoTen:',hoten,type(hoten))
+print('Tuoi:',tuoi,type(tuoi))
+print('Cao:',cao,type(cao))
+print('CoHocPython:',CoHocPython,type(CoHocPython))
+print("\n---")
+#Cau2_Nhap&Xuat-TinhToan
+user=input("Nam sinh cua ban la: ")
+user1=input("Nam hien tai la: ")
+Tuoiuser=int(user1)-int(user)
+print(f"Ban {Tuoiuser} tuoi sinh nam {user} nam nay la {user1}")
+print("\n---")
+#Baitap3_Phân loại theo tuổi
+hoituoix=int(input("Nhap tuoi cua ban: "))
+x=hoituoix
+if x >=60:
+    print('Cao tuổi')
+elif 18 <= x <= 59:
+    print('Người lớn')
+elif 12 <= x <= 17:
+    print('Thiếu niên')
+else:
+    print('Tre em')
+#Cau4_Máy tính mini
+num1=int(input("Nhap mot so bat ky: "))
+num2=int(input("Nhap 1 so bat ky: "))
+if num2 != 0:
+    print(f"Thuong la {num1/num2}")
+else:
+    print('Phep Thuong khong co kq')
+print(f"Tong la {num1+num2}")
+print(f"Hieu la {num1-num2}")
+print (f"Tich la {num1*num2}")
+#✅Câu 5: In số chẵn từ 1 đến 100
+
+dayso=range(1,100)
+for x in dayso:
+    if x % 2 == 0:
+        print(x,end=" ")
+print('\n---')
 range(1,101)
 x=3
 while x<=101:
     if x%2 == 0:
        print(x,end=" ")
-    else:
-        print(x,end=" ")
     x+=1
+#✅ Câu 6: List & thao tác cơ bản
+banthan=['nam','an','hieu','hanh','tin']
+for x in banthan:
+    print(x,end=" ")
+print('\n---')
+banthan[1]='hoang'
+banthan.append('ninh')
+for y in banthan:
+    print(y,end=" ")
+print('\n---')
+#✅ Câu 7: Chuỗi & kiểm tra nội dung
+submit=input("nhap 1 cau bat ky: ")
+print('Do dai cau cua ban la: ', len(submit))
+print('3 Ky Tu Dau: ', submit[:4])
+if 'python' in submit.lower():
+    print('✅ Câu bạn nhập CÓ chứa')
+else:
+    print('❌ Câu bạn nhập KHÔNG chứa Python')
