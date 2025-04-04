@@ -2,85 +2,85 @@
 #Goal: practical_int,_float,_str,_bool, và_type
 #Viết chương trình lưu các thông tin sau: Họ tên,Tuổi,Chiều cao,Tình trạng học Python 
 
-# name = input("Nhập tên của bạn: ")
-# age = int(input("Nhập tuổi của bạn: "))
-# height = float(input("Nhập chiều cao (m): "))
-# learning = input("Bạn đang học Python? (Yes/No): ")
-# is_learning = learning.lower() == "yes"
+name = input("Nhập tên của bạn: ")
+age = int(input("Nhập tuổi của bạn: "))
+height = float(input("Nhập chiều cao (m): "))
+learning = input("Bạn đang học Python? (Yes/No): ")
+is_learning = learning.lower() == "yes"
 
-# print("Trạng thái học Python:", is_learning, "| Kiểu:", type(is_learning))
-# print("Tên:", name, "| Kiểu:", type(name))
-# print("Tuổi:", age, "| Kiểu:", type(age))
-# print("Chiều cao:", height, "| Kiểu:", type(height))
-# print("Đang học Python:", learning, "| Kiểu:", type(learning))
+print("Trạng thái học Python:", is_learning, "| Kiểu:", type(is_learning))
+print("Tên:", name, "| Kiểu:", type(name))
+print("Tuổi:", age, "| Kiểu:", type(age))
+print("Chiều cao:", height, "| Kiểu:", type(height))
+print("Đang học Python:", learning, "| Kiểu:", type(learning))
 
 #BaiTap_InPut&OutPut
 #Hỏi năm sinh từ người dùng và in ra tuổi hiện tại
-# name = input("Tên bạn là gì: ")
-# birthday = input("Nhập năm sinh của bạn:")
-# current_year = input("Nhập năm hiện tại: ")
-# age = int(current_year) - int(birthday) 
-# print(f"Xin chào {name}"),print(f"Tuổi của bạn là {age}") #more_advange
-# # print("Tuổi của bạn là", age) #simple_match with my current level
+name = input("Tên bạn là gì: ")
+birthday = input("Nhập năm sinh của bạn:")
+current_year = input("Nhập năm hiện tại: ")
+age = int(current_year) - int(birthday) 
+print(f"Xin chào {name}"),print(f"Tuổi của bạn là {age}") #more_advange
+print("Tuổi của bạn là", age) #simple_match with my current level
 
 #BaiTap_Type_Conversion
 #nhap 2 so tu ban phim, In tong, hieu, tich, thuong
-# number1 = int(input("Nhap 1 so bat ky tu 0 -9: "))
-# number2 = int(input("Nhap 1 so bat ky tu 0-9: "))
+number1 = int(input("Nhap 1 so bat ky tu 0 -9: "))
+number2 = int(input("Nhap 1 so bat ky tu 0-9: "))
 
-# print(f"Tong cua hai so tren la {number1 + number2}")
-# print(f"Tich cua hai so tren la {number1*number2}")
-# print(f"Hieu cua hai so tren la {number1 - number2}")
-# print(f"Thuong cua hai so tren la {number1/number2}")
+print(f"Tong cua hai so tren la {number1 + number2}")
+print(f"Tich cua hai so tren la {number1*number2}")
+print(f"Hieu cua hai so tren la {number1 - number2}")
+print(f"Thuong cua hai so tren la {number1/number2}")
 
 #BaiTap4_Conditionals(If/Elif/Else)
 
-# age = int(input("Nhap nam sinh cua ban: "))
-# year = int(input("Nhap nam hien tai: "))
-# x = (year - age)
-# if x <12:
-#     print('Ban la Tre em')
-# elif  (12<= x <= 17):
-#     print('Ban la Thieu nien')
-# elif  (18 <= x < 60):
-#     print('Ban la Nguoi lon')  
-# else:
-#     print('Ban la nguoi Cao tuoi')
+age = int(input("Nhap nam sinh cua ban: "))
+year = int(input("Nhap nam hien tai: "))
+x = (year - age)
+if x <12:
+    print('Ban la Tre em')
+elif  (12<= x <= 17):
+    print('Ban la Thieu nien')
+elif  (18 <= x < 60):
+    print('Ban la Nguoi lon')  
+else:
+    print('Ban la nguoi Cao tuoi')
 
 #BaiTap5_Loops(for,while)
 
-# range(1,100) #hienthisochan
-# for x in range(1,100):
-#     if x % 2 == 0:
-#         print(x,end=" ")
+range(1,100) #hienthisochan
+for x in range(1,100):
+    if x % 2 == 0:
+        print(x,end=" ")
 
-# range(1,101) #hienthisole
-# for y in range(1,101):
-#     if y % 2 != 0:
-#         print(y,end= " ") #end=" ":dung de khi in la day cach thay vi xuong hang
+range(1,101) #hienthisole
+for y in range(1,101):
+    if y % 2 != 0:
+        print(y,end= " ") #end=" ":dung de khi in la day cach thay vi xuong hang
 
-# print("\n---")
-# i = 1
-# while i <= 100:
-#     if i % 2 == 0:
-#         print(i, end=" ")
-#     i += 1 
+print("\n---")
+i = 1
+while i <= 100:
+    if i % 2 == 0:
+        print(i, end=" ")
+    i += 1 
 
- #BaiTap6_List&Indexing
-# trai_cay=['cam','chanh','xoai','dua','dau']
-# trai_cay[1]='dudu'
-# trai_cay.append('dautam')
-# for traicay in trai_cay:
-#     print(traicay,end=" ")
+#BaiTap6_List&Indexing
+trai_cay=['cam','chanh','xoai','dua','dau']
+trai_cay[1]='dudu'
+trai_cay.append('dautam')
+for traicay in trai_cay:
+    print(traicay,end=" ")
 
-# #BaiTap7_Strings&Slicing
-# nhapcau=input("Ban hay nhap mot cau bat ky: ")
-# print('Độ dài câu:', len(nhapcau))
-# print('4 ký tự đầu:', nhapcau[0:4])
-# if 'Python' in nhapcau:
-#     print('✅ Câu bạn nhập CÓ chứa')
-# else:
-#     print('❌ Câu bạn nhập KHÔNG chứa Python')
+#BaiTap7_Strings&Slicing
+nhapcau=input("Ban hay nhap mot cau bat ky: ")
+print('Độ dài câu:', len(nhapcau))
+print('4 ký tự đầu:', nhapcau[0:4])
+if 'Python' in nhapcau:
+    print('✅ Câu bạn nhập CÓ chứa')
+else:
+    print('❌ Câu bạn nhập KHÔNG chứa Python')
 
 #Cau1_Bai Tong Hop_Bien&Kieu_Du_Lieu
 print("\n---")
